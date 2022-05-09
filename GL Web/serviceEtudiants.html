@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page d'acceuil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div1">
+      <center><img src="ensate.png" alt=""></center>
+          <h1>SERVICES POUR LES ETUDIANTS</h1>
+    </div>
+    <center><form action="Acceuil.php" method="post">
+          <strong><label for="user">N° d'Apogée :</label></strong><br>
+        <input type="number" id="apogee" placeholder="Code APOGEE" name="apogee" required><br>
+        <strong><label for="cin">Carte d'identité/Carte de séjour :</label></strong><br>
+        <input type="text" id="user" placeholder="CIN" name="cin" style="text-transform: uppercase;" required><br>
+        <strong><label for="mail">Email Institutionnel :</label></strong><br>
+        <input type="email" id="mail" placeholder="prenom.nom@etu.uae.ac.ma" name="email" required><br>
+        <strong><label for="name">Nom complet :</label></strong><br>
+        <input type="text" id="name" placeholder="NOM PRENOM" name="nom" style="text-transform: uppercase;" required><br>
+          <strong><label for="demande">Type de demande :</label></strong><br>
+          <input list="demande" placeholder="Veuillez choisir un document !" name="demande" required>
+                  <datalist id="demande">
+                       <option value="Attestation de scolarité">
+                       <option value="Relevé de notes">
+                       <option value="Convention de stage">
+                  </datalist><br>
+          <input type="submit" value="Effectuer une demande" name="Envoyer" class="ppp1"/>
+      </form></center>
+   
+</body>
+</html>
